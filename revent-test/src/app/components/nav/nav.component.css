@@ -1,0 +1,10 @@
+.logo {
+  width: 200px;
+  height: 90px;
+}
+.nav-link {
+  color: #ffffff;
+}
+.nav-item .active {
+  color: #fce82f;
+}

@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  background: #000000;
+  color: #ffffff;
+}
+
+/* button style */
+.btn {
+  padding: 1rem 2rem;
+}
+.btn-main {
+  color: #000000;
+  background-color: #fce82f;
+  border-radius: 10px;
+  font-weight: bold;
+}
