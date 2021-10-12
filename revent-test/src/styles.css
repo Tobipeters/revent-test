@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
+html, body {
+  overflow-x : hidden; 
+  width: 100%;
+}
 body {
   font-family: "Montserrat", sans-serif;
   position: relative;
   background-color: #000000;
   color: #ffffff;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 /* button style */
