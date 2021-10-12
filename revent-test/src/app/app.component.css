@@ -1,5 +1,5 @@
 header {
-  height: 80vh;
+  height: 85vh;
 }
 header h3 {
   font-size: 2.1rem;
@@ -106,9 +106,9 @@ textarea {
   min-height: 150px;
 }
 @media screen and (max-width: 1200px) {
-  header {
-    height: 50vh;
-  }
+  /* header {
+    height: 70vh;
+  } */
   header h3 {
     width: 70%;
   }
@@ -118,6 +118,9 @@ textarea {
 }
 
 @media screen and (max-width: 991px) {
+  header {
+    height: 90vh;
+  }
   header h3,
   header p,
   section h5,
@@ -182,6 +185,9 @@ textarea {
 }
 
 @media screen and (max-width: 700px) {
+  header {
+    height: 120vh;
+  }
   header h3 {
     font-size: 1.5rem;
     width: 100%;
@@ -234,5 +240,32 @@ textarea {
   }
   .work-container .UI-work {
     width: 320px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header {
+    height: 100vh;
+  }
+  header h3 {
+    font-size: 1.2rem;
+  }
+  .header-img {
+    width: 250px;
+    height: 250px;
+  }
+  .work-container .UI-work {
+    width: 250px;
+  }
+  section img {
+    width: 100%;
+    height: 250px;
+  }
+  h5 {
+    font-size: 0.85rem;
+  }
+  p,
+  a {
+    font-size: 12px;
   }
 }
