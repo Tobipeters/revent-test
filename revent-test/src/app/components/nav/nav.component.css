@@ -1,9 +1,14 @@
+.navbar {
+  background: #000000;
+  margin-bottom: 2rem;
+}
 .logo {
   width: 200px;
   height: 90px;
 }
 .nav-link {
   color: #ffffff;
+  cursor: pointer;
 }
 .nav-item .active {
   color: #fce82f;
@@ -19,6 +24,6 @@
 
 @media screen and (max-width: 700px) {
   .logo {
-    height: 80px;
+    height: 75px;
   }
 }

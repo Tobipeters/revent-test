@@ -21,7 +21,7 @@ export class NavComponent implements OnInit {
   goTo = (url: string) => {
     window.location.href = url
     this.currentUrl = window.location.hash;
-    console.log("checking", this.currentUrl, url)
+    // console.log("checking", this.currentUrl, url)
   }
 
 

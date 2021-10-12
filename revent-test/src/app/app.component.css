@@ -198,6 +198,7 @@ textarea {
   }
   section img {
     height: 320px;
+    width: 100%;
   }
   .icon-holder {
     width: 25px;
