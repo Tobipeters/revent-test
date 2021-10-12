@@ -12,16 +12,25 @@
 
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#about">About Us</a>
+                    <a class="nav-link" (click)="goTo('#about')" [ngClass]="{'active': currentUrl == '#about'}">
+                        About
+                        Us
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" (click)="goTo('#portfolio')" [ngClass]="{'active': currentUrl == '#portfolio'}">
+                        Portfolio
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#resume">Experience</a>
+                    <a class="nav-link" (click)="goTo('#resume')" [ngClass]="{'active': currentUrl == '#resume'}">
+                        Experience
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" (click)="goTo('#contact')" [ngClass]="{'active': currentUrl == '#contact'}">
+                        Contact
+                    </a>
                 </li>
             </ul>
         </div>
