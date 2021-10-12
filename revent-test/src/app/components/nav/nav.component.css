@@ -8,3 +8,17 @@
 .nav-item .active {
   color: #fce82f;
 }
+.navbar-toggler-icon {
+  font-size: 2rem;
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    height: 85px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    height: 80px;
+  }
+}
