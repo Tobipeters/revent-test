@@ -13,7 +13,7 @@
             planning and management.​
           </p>
           <button class="btn btn-main my-4">Get in touch</button>
-          <div class="">
+          <div class="icon-container">
             <div class="icon-holder">
               <img src="../assets/icons/behance.svg" />
             </div>
@@ -27,24 +27,27 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="header-img"></div>
+        <div class="header-img">
+          <img src="../assets/yellow-bg.png" />
+          <img src="../assets/yellow-masked.png" />
+        </div>
       </div>
     </div>
   </div>
 </header>
 
 <!-- About section -->
-<section>
+<section id="about">
   <div class="container py-4 py-lg-5">
     <div class="main-title">
       <h4 class="">About Us</h4>
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <img src="../assets/about-img.png" alt="about image" />
       </div>
-      <div class="col-md-6 d-flex align-items-center">
+      <div class="col-lg-6 d-flex align-items-center">
         <div>
           <h5 class="mb-3">We focus on value and excellence</h5>
           <p class="mt-1 mb-4">
@@ -62,7 +65,7 @@
 </section>
 
 <!-- Resume section -->
-<section>
+<section id="resume">
   <div class="container  py-4 py-lg-5">
     <div class="main-title">
       <h4 class="">Resume</h4>
@@ -103,7 +106,7 @@
 
 
 <!-- Portfolio section -->
-<section>
+<section id="portfolio">
   <div class="container  py-4 py-lg-5">
     <div class="main-title">
       <h4 class="">Portfolio</h4>
@@ -111,8 +114,7 @@
 
     <div class="row">
       <div class="col-12">
-        <ul class="nav nav-pills portfolio-tab mb-3 justify-content-start justify-content-md-center" id="pills-tab"
-          role="tablist">
+        <ul class="nav nav-pills portfolio-tab mb-3 justify-content-center" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
               type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
@@ -136,27 +138,55 @@
         </ul>
 
 
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">...
+        <div class="tab-content py-3" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+            <!-- <div class="row d-md-flex flex-md-nowrap work-container"> -->
+            <div class="row work-container">
+              <div class="col-lg-4 col-md-6">
+                <img src="../assets/UI-design-work.png" class="UI-work" />
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <img src="../assets/UI-design-work.png" class="UI-work" />
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <img src="../assets/UI-design-work.png" class="UI-work" />
+              </div>
+            </div>
           </div>
-          <div class="tab-pane fade" id="pills-website" role="tabpanel" aria-labelledby="pills-website-tab">...</div>
-          <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">...</div>
-          <div class="tab-pane fade" id="pills-css" role="tabpanel" aria-labelledby="pills-css-tab">...</div>
-          <div class="tab-pane fade" id="pills-github" role="tabpanel" aria-labelledby="pills-github-tab">...</div>
+          <div class="tab-pane fade" id="pills-website" role="tabpanel" aria-labelledby="pills-website-tab">
+            <div class="py-3 text-center">
+              Website says Hi!
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">
+            <div class="py-3 text-center">
+              Mobile says Hey!
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-css" role="tabpanel" aria-labelledby="pills-css-tab">
+            <div class="py-3 text-center">
+              CSS is will to style you
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-github" role="tabpanel" aria-labelledby="pills-github-tab">
+            <div class="py-3 text-center">
+              GitHub places it all on cloud.
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COntact us -->
-<section>
+<!-- Contact us -->
+<section id="contact">
   <div class="container  py-4 py-lg-5">
     <div class="main-title">
       <h4 class="">Get in Touch</h4>
     </div>
-    <div class="row mt-3 mb-4 mb-lg-5">
-      <div class="col-md-6 contact-holder d-flex justify-content-md-end">
+    <div class="d-flex justify-content-evenly mt-3 mb-4 mb-lg-5">
+      <div class="col-md-3 contact-holder d-flex justify-content-md-end">
         <div class="text-center">
           <img src="../assets/icons/call-us.svg" />
           <h5 class="">Call us</h5>
@@ -164,9 +194,9 @@
         </div>
       </div>
 
-      <div class="col-md-6 contact-holder d-flex justify-content-start">
+      <div class="col-md-3 contact-holder d-flex justify-content-start">
         <div class="text-center">
-          <img src="../assets/icons/call-us.svg" />
+          <img src="../assets/icons/send.svg" />
           <h5 class="">Send Email</h5>
           <a href="mailto:revent@digital.com">revent@digital.com</a>
         </div>

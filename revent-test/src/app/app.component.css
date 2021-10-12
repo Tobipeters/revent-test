@@ -12,11 +12,20 @@ header p {
   font-weight: normal;
 }
 .header-img {
-  background-image: url("../assets/yellow-bg.png"),
-    url("../assets/yellow-masked.png");
-  background-position: center, center;
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
+  position: relative;
+  width: 500px;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+}
+.header-img img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.header-img img:last-child {
+  top: -50px;
 }
 
 .icon-holder {
@@ -89,16 +98,141 @@ section p {
   color: #ffffff;
   text-decoration: none;
 }
-
-@media screen and (max-width: 700px) {
-  /* header {
-    height: 80vh;
-  } */
+.form-control {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+textarea {
+  min-height: 150px;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    height: 50vh;
+  }
   header h3 {
-    font-size: 1.2rem;
-    width: 100%;
+    width: 70%;
+  }
+  section img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header h3,
+  header p,
+  section h5,
+  section p {
+    text-align: center;
+  }
+  header .btn,
+  section .btn {
+    margin: auto;
+    display: block;
+  }
+  header h3 {
+    font-size: 1.7rem;
+    width: 90%;
   }
   header p {
     font-size: 16px;
+  }
+  .header-img {
+    width: 360px;
+    height: 360px;
+    margin: 5rem auto 0;
+  }
+  .header-img img {
+    width: 100%;
+  }
+  section img {
+    height: 400px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  .icon-container {
+    display: block;
+    margin: auto;
+    width: fit-content;
+  }
+  .icon-holder {
+    width: 30px;
+    height: 30px;
+  }
+  .icon-holder img {
+    width: 20px;
+    height: 20px;
+  }
+  .main-title {
+    margin-bottom: 1.6rem;
+  }
+  .main-title h4 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .resume-ul li h5,
+  .resume-ul li p {
+    text-align: start;
+  }
+  /* .work-container {
+    overflow-x: auto;
+  } */
+  .work-container .UI-work {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header h3 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .header-img {
+    width: 320px;
+    height: 320px;
+  }
+  section img {
+    height: 320px;
+  }
+  .icon-holder {
+    width: 25px;
+    height: 25px;
+  }
+  .icon-holder img {
+    width: 15px;
+    height: 15px;
+  }
+  .main-title {
+    margin-bottom: 1.5rem;
+  }
+  .main-title h4 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .main-title h4::after {
+    height: 8px;
+  }
+
+  section h5 {
+    font-size: 1.2rem;
+  }
+  section p {
+    line-height: 1.7;
+  }
+  .portfolio-tab {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .portfolio-tab .nav-link {
+    padding: 0.4rem 1rem;
+    font-size: 14px;
+  }
+
+  .contact-holder img {
+    width: 25px;
+    height: 25px;
+  }
+  .work-container .UI-work {
+    width: 320px;
   }
 }
