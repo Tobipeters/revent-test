@@ -6,6 +6,7 @@ body {
   position: relative;
   background-color: #000000;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 /* button style */
