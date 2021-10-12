@@ -186,7 +186,7 @@ textarea {
 
 @media screen and (max-width: 700px) {
   header {
-    height: 120vh;
+    height: 125vh;
   }
   header h3 {
     font-size: 1.5rem;
@@ -245,9 +245,6 @@ textarea {
 }
 
 @media screen and (max-width: 350px) {
-  header {
-    height: 100vh;
-  }
   header h3 {
     font-size: 1.2rem;
   }
